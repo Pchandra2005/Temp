@@ -6,14 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Multiplication Tables</h1>
     <div class='container'>
-    <p><input type="number" id="num" placeholder="Enter a Number" /></p>
-    <p><button onclick="table()">Submit</button> </p>
+    <p><input type="number" id="num" placeholder="Enter a Number" onchange="table()" /></p>
+    <!-- <p><button onclick="table()">Submit</button> </p> -->
     </div>
     <script>
         function table(){
             let n = document.getElementById("num").value
-            let str = "<div class='container'>"
+            let str = ""
             for(let i=1;i<=10;i++){
                 str += `${n} x ${i} = ${n*i}<br>`
             }
