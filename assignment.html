@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(){
+            let v = document.getElementById("email").value
+            let p = document.getElementById("password").value
+            if(v == "jhon@gmail.com"){
+                if(p == "1234"){
+                    document.write("Welcome back")
+                }
+            }else{
+                document.write("Access Denied")
+            }
+        }
+    </script>
+    </head>
+<body>
+    <input type="email" id="email" placeholder="Enter email address" />
+    <br>
+    <p></p>
+    <input type="password" id="password" placeholder="Enter Password" />
+    <br>
+    <p></p>
+    <button onclick="f1()" style="background-color: blue;" style="text-align: center;">LogIn</button>
+</body>
+</html>

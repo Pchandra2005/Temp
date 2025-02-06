@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function register(){
+            let name = document.getElementById("name").value
+            let email = document.getElementById("email").value
+            let psw = document.getElementById("psd").value
+            let dob = document.getElementById("dob").value
+            msg.innerHTML = `${name}, ${email}, ${psw}, ${dob} `
+        }
+    </script>
+    
+</head>
+<body>
+    <p><input type="text" id="name" placeholder="Enter Name"/> </p>
+    <p><input type="email" id="email" placeholder="Enter EmailId" /></p>
+    <p><input type="password" id="psd" placeholder="Enter Password" />  </p>
+    <p><input  type="date" id="dob" placeholder="Date of Birth" /> </p>
+    <p><button onclick="register()">Register</button></p>
+    <div id="msg"></div>
+</body>
+</html>

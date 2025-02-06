@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+        let usr=document.getElementById("usrname").value
+        let pwd=document.getElementById("psd").value
+        msg.innerHTML = `${usr} ${pwd}`
+        }
+    </script>
+</head>
+<body>
+    
+    <p><input type="email" id="usrname" placeholder="Enter user name" /></p>
+    <p><input type="password" id="psd" placeholder="Enter the password" /></p>
+    <p><button onclick="show()">LogIn</button></p>
+    <div id="msg"></div>
+</body>
+</html>
