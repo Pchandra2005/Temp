@@ -34,7 +34,7 @@
             // return sum;
             return sum + value.price * (cart[value.id]?cart[value.id]:0);
         },0)
-        divTotal.innerHTML = total;
+        divTotal.innerHTML = `Order Value: ${total}`;
       };
       const showCart = () => {
         let str = "";
@@ -50,6 +50,8 @@
           }
         });
         divCart.innerHTML = str;
+        let count = Object.keys(cart).length
+        items.innerHTML = count;
         showTotal()
       };
       const showProducts = () => {
@@ -65,6 +67,7 @@
   </head>
   <body onload="showProducts()">
     <h1>My Store</h1>
+    <h4>Cart:<span id="items"></span></span></h4>
     <hr />
     <h3>Products</h3>
     <div id="divProducts"></div>
