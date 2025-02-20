@@ -129,7 +129,7 @@
           <p>Gender:${g}</p>
           <p>Date of Birth:${dob}</p>
           <button>Confirm</button>
-          <button>Edit</button>
+          <button onclick='showForm()'>Edit</button>
         </div>
         `;
         root.innerHTML = str;
@@ -139,7 +139,7 @@
         let str = `
       
       <div class="row">
-        <input type="text" id="firstname" placeholder="Firstname" />
+        <input type="text" required id="firstname" placeholder="Firstname" />
         <input type="text" id="surname" placeholder="Surname" />
       </div>
       <div class="row" style="justify-content: start">
@@ -197,8 +197,7 @@
       `;
         root.innerHTML = str;
       };
-
-      showForm();
+      
       let str = "";
       let dt = new Date()
       let d = dt.getDate()
